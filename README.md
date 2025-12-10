@@ -12,6 +12,41 @@
 - ✅ 断点续传(checkpoint 机制)
 - ✅ 自动处理 MySQL 关键字字段名
 
+## 环境准备
+
+### 1. 安装 Python 依赖
+
+项目依赖已在 `requirements.txt` 中定义,使用以下命令安装:
+
+```bash
+# 使用 pip 安装
+pip install -r requirements.txt
+
+# 或使用 pip3
+pip3 install -r requirements.txt
+```
+
+### 2. 使用虚拟环境(推荐)
+
+为了避免依赖冲突,建议使用 Python 虚拟环境:
+
+```bash
+# 创建虚拟环境
+python3 -m venv venv
+
+# 激活虚拟环境
+source venv/bin/activate  # macOS/Linux
+# 或
+venv\Scripts\activate  # Windows
+
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 3. 安装 DataX
+
+确保已安装并配置 DataX,并在 `sync.py` 中正确设置 `DATAX_PATH`。
+
 ## 使用方法
 
 ### 1. 同步所有表(智能模式)
